@@ -1,0 +1,8 @@
+ <!--template -> how my data will render-->
+
+{{outlet}}
+<div>Hey! Look, I'm in a route</div>
+
+{{#each model as |list|}}
+    <div>List #{{list.id}} is a list about {{list.title}}</div>
+{{/each}}
